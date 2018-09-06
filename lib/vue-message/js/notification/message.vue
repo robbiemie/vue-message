@@ -17,20 +17,11 @@ export default {
       show: false
     }
   },
-  props: {
-    item: {
-      type: Object,
-      default: null
-    },
-    content: {
-      type: 'String',
-      default: ''
-    },
-    name: {
-      type: 'String',
-      default: ''
-    }
-  },
+  props: [
+    'item',
+    'content',
+    'name'
+  ],
   created () {
   },
   computed: {

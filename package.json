@@ -1,17 +1,18 @@
 {
-  "name": "@yy/vue-message",
+  "name": "@vuestyle/vue-message",
   "version": "0.0.2",
-  "description": "仿iView全局提示组件（移动端 Message组件）",
+  "description": "iView全局提示组件（移动端 Message组件）",
   "main": "dist/index.js",
   "module": "lib/vue-message/index.js",
-  "author": "charles yang <yangxin2@yy.com>",
+  "author": "charles yang",
   "scripts": {
+    "pub": "npm run build:720 && node ./pub.js",
+    "server": "webpack-dev-server --config ./build/webpack.dev.js",
     "dev": "node ./node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development npm run server",
-    "server": "webpack-dev-server --config ./build/webpack.dev.js"
+    "build:720": "node ./node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production baseWidth=720 node ./node_modules/webpack/bin/webpack.js --config ./build/webpack.prod.js"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm-registry.yy.com"
+    "access": "public"
   },
   "eslintConfig": {
     "globals": {}
@@ -19,6 +20,11 @@
   "eslintIgnore": [
     "dist/*"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yang657850144/vue-message.git"
+  },
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
