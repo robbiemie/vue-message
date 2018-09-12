@@ -63,6 +63,7 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  z-index: 99999;
   box-shadow: 0px 0px 15px #ccc;
   background: #fff;
   &__icon {
