@@ -116,6 +116,11 @@ Currently supports four types：
 
 [Github Source code](https://github.com/yang657850144/vue-message)
 
+
+**Welcome discussion in the following site👇**
+
+[issues1](https://github.com/yang657850144/vue-message/issues/1)
+
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 

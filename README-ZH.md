@@ -115,6 +115,11 @@ this.$Message.loading(config)
 
 [Github项目源码](https://github.com/yang657850144/vue-message)
 
+
+**欢迎在下面进行讨论👇**
+
+[issues1](https://github.com/yang657850144/vue-message/issues/1)
+
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 
