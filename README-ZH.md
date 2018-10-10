@@ -1,7 +1,7 @@
 # 移动端 Message组件
 ------
 <p align="center">
-    <a href="www.baidu.com">
+    <a href="http://www.yangoogle.com/#/work">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
     </a>
 </p>
