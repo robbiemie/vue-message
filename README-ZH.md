@@ -1,4 +1,4 @@
-# 移动端 Message组件
+# 移动端 Messages组件
 ------
 <p align="center">
     <a href="http://www.yangoogle.com/#/work">
@@ -45,10 +45,10 @@ import Vue from 'vue'
 // 导入其他模块
 ...
 // 注意引入顺序，必须放在vue后面
-import VueMessage from 'vue-message'
+import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessage)
+Vue.use(VueMessages)
 ...
 ```
 

@@ -1,4 +1,4 @@
-# Mobile UI Component - Vue-message
+# Mobile UI Component - Vue-messages
 ------
 <p align="center">
     <a href="http://www.yangoogle.com/#/work">
@@ -46,10 +46,10 @@ import Vue from 'vue'
 // import other modules
 ...
 // note the import order 
-import VueMessage from 'vue-message'
+import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessage)
+Vue.use(VueMessages)
 ...
 ```
 
