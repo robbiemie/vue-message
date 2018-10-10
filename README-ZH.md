@@ -4,17 +4,16 @@
     <a href="www.baidu.com">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
     </a>
-
 </p>
 
 ## 文档
 ------
-中文 | English
+[中文](https://github.com/yang657850144/vue-message/blob/master/README-ZH.md) | [English](https://github.com/yang657850144/vue-message/blob/master/README.md)
 
 ## 介绍
 ------
 
-> iview风格的轻量级全局消息提示组件，在顶部居中显示，自动清空消失dom。
+> iview风格的轻量级全局消息提示组件。
 
 ## 特点
 ------
