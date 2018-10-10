@@ -1,7 +1,7 @@
 {
   "name": "vue-messages",
-  "version": "1.0.6",
-  "description": "iView全局提示组件（移动端 Message组件）",
+  "version": "1.1.1",
+  "description": "Mobile UI Component - Vue-messages",
   "main": "dist/index.js",
   "module": "lib/vue-message/index.js",
   "author": "charles yang",
