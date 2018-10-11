@@ -11,12 +11,12 @@ const isDev = process.env.NODE_ENV !== 'production' // eslint-disable-line
 
 console.log(`当前node环境为：${process.env.NODE_ENV}`)
 
-const dist = process.env.baseWidth || ''
+// const dist = process.env.baseWidth || ''
 
 module.exports = {
   entry: path.join(__dirname, '../lib/vue-message'),
   output: {
-    path: path.resolve(__dirname, `../dist/${dist}`),
+    path: path.resolve(__dirname, '../lib/vue-message/dist'),
     filename: 'index.js'
   },
   module: {

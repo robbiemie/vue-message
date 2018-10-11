@@ -1,13 +1,12 @@
 {
   "name": "vue-messages-test",
   "version": "1.0.2",
-  "description": "Mobile UI Component - Vue-messages",
+  "description": "Vue-messages Component for test",
   "main": "dist/index.js",
   "module": "lib/vue-message/index.js",
   "author": "charles yang",
   "scripts": {
-    "pub": "npm run release && node ./pub.js",
-    "release": "standard-version",
+    "pub": "node ./pub.js",
     "server": "webpack-dev-server --config ./build/webpack.dev.js",
     "dev": "node ./node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development npm run server",
     "build": "node ./node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production baseWidth=720 node ./node_modules/webpack/bin/webpack.js --config ./build/webpack.prod.js"

@@ -21,9 +21,7 @@ module.exports = merge(common, {
     hot: true,
     open: true,
     quiet: true, // necessary for FriendlyErrorsPlugin
-    host: 'test.yy.com',
     // 随机搞一个端口吧
-    port: 4000,
     // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
     watchOptions: {
       poll: false
