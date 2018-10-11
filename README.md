@@ -1,5 +1,4 @@
 # Mobile UI Component - Vue-messages
-------
 <p align="center">
     <a href="http://www.yangoogle.com/#/work">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
@@ -7,19 +6,16 @@
 </p>
 
 ## DOCS
-------
 [中文](https://github.com/yang657850144/vue-message/blob/master/README-ZH.md) | [English](https://github.com/yang657850144/vue-message/blob/master/README.md)
 
 
 [Online preview](http://www.yangoogle.com/#/work)
 
 ## Introduction
-------
 
 > Lightweight Mobile UI Component build on Vue2.0 and like [iview](https://www.iviewui.com/) style.
 
 ## Features
-------
 
 * [x] Friendly interface docs
 * [x] Simple UI style
@@ -30,7 +26,6 @@
 
 
 ## Begin
--------
 
 **Install**
 use npm:
