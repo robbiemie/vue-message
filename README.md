@@ -1,6 +1,6 @@
 # Mobile UI Component - Vue-messages
 <p align="center">
-    <a href="http://www.yangoogle.com/#/work">
+    <a href="http://www.yangoogle.com/#/lib/messages">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
     </a>
 </p>
