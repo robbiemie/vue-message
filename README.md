@@ -16,7 +16,7 @@
 [中文](https://github.com/yang657850144/vue-message/blob/master/README-ZH.md) | [English](https://github.com/yang657850144/vue-message/blob/master/README.md)
 
 
-[Online preview](http://www.yangoogle.com/#/work)
+[Online preview](http://www.yangoogle.com/#/lib/messages)
 
 ## Introduction
 
