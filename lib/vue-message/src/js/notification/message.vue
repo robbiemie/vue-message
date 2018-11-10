@@ -17,12 +17,10 @@ export default {
       show: false,
       themeConfig: {
         'classic': {
-          fontSize: 28,
           color: 'rgb(78, 78, 78)',
           backgroundColor: '#fff'
         },
         'blackGold': {
-          fontSize: 28,
           color: 'rgb(255, 255, 255)',
           backgroundColor: '#000'
         }
@@ -44,15 +42,15 @@ export default {
   },
   async mounted () {
     this.$nextTick(() => {
-      // console.log(this.itemInfo)
+      console.log(this.itemInfo)
       let theme = this.itemInfo.themes || 'classic'
       let w = document.body.clientWidth
       let cw = this.$refs.messageCell.clientWidth
       this.$refs.messageCell.style.top = `${this.itemInfo.styles.top}px`
       this.$refs.messageCell.style.left = `${(w - cw) / 2}px`
+      this.$refs.messageCell.style.fontSize = `${this.itemInfo.styles.fontSize}px`
       this.$refs.messageCell.style.fontWeight = this.itemInfo.styles.fontWeight
       this.$refs.messageCell.style.color = this.themeConfig[theme].color
-      this.$refs.messageCell.style.fontSize = this.themeConfig[theme].fontSize
       this.$refs.messageCell.style.backgroundColor = this.themeConfig[theme].backgroundColor
     })
     this.show = true

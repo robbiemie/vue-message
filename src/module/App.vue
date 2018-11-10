@@ -21,7 +21,20 @@ export default {
   },
   methods: {
     info () {
-      this.$Message.info('This is a normal message.')
+      this.$Message.info({
+        content: 'This is a normal message.',
+        duration: 1,
+        themes: 'classic', // classic classicBold
+        styles: {
+          fontSize: 14 // 单位: px
+        },
+        before () {
+          console.log('my before hook')
+        },
+        done () {
+          console.log('my done hook')
+        }
+      })
     },
     error () {
       this.$Message.error('I\'m sorry，throw an error for you!')

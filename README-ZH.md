@@ -61,7 +61,8 @@ Vue.use(VueMessage, {
   themes: 'blackGold', // classic or classicBold
   styles: {
     top: 24, // 单位: px
-    fontWeight: 'normal'
+    fontWeight: 'normal',
+    fontSize: 28
   },
   before () {
     console.log('custom before hook')
@@ -95,13 +96,31 @@ API
 
 ```javascript
 
-// config 类型： string | object
+/** config 类型： string */
 this.$Message.info(config)
 this.$Message.success(config)
 this.$Message.warning(config)
 this.$Message.error(config)
 this.$Message.loading(config)
 
+
+/** config 类型: object */
+this.$Message.info({
+  content: 'This is a normal message.',
+  duration: 1,
+  themes: 'classic', // classic classicBold
+  styles: {
+    fontSize: 14 // 单位: px
+  },
+  before () {
+    console.log('my before hook')
+  },
+  done () {
+    console.log('my done hook')
+  }
+})
+// other type 
+...
 ```
 
 

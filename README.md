@@ -61,6 +61,7 @@ Vue.use(VueMessage, {
   styles: {
     top: 24, // unit: px
     fontWeight: 'normal' // normal or bold
+    fontSize: 28
   },
   before () {
     console.log('custom before hook')
@@ -96,13 +97,31 @@ Use the component in the following methods
 
 ```javascript
 
-// config TYPE： string | object
+/** config TYPE： string */
 this.$Message.info(config)
 this.$Message.success(config)
 this.$Message.warning(config)
 this.$Message.error(config)
 this.$Message.loading(config)
 
+
+/** config TYPE： object */
+this.$Message.info({
+  content: 'This is a normal message.',
+  duration: 1,
+  themes: 'classic', // classic classicBold
+  styles: {
+    fontSize: 14 // 单位: px
+  },
+  before () {
+    console.log('my before hook')
+  },
+  done () {
+    console.log('my done hook')
+  }
+})
+// other type 
+...
 ```
 
 

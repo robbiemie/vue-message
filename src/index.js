@@ -14,7 +14,8 @@ Vue.use(VueMessage, {
   themes: 'classic', // classic classicBold
   styles: {
     top: 24, // 单位: px
-    fontWeight: 'normal'
+    fontWeight: 'normal',
+    fontSize: 18
   },
   before () {
     console.log('custom before hook')
