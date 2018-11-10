@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://cn.vuejs.org/v2/guide/"><img src="https://makefriends.bs2dl.yy.com/bm1539228392003.svg" alt="vue"></a>
-  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1539246165014.svg" alt="vue"></a>
+  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1541835935319.svg" alt="vue"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://makefriends.bs2dl.yy.com/bm1539228515177.svg" alt="vue"></a>
   <a href="https://github.com/yang657850144/vue-message"><img src="https://makefriends.bs2dl.yy.com/bm1539228726851.svg" alt="vue"></a>
 </p>
@@ -29,7 +29,7 @@
 * [x] 轻量且高效
 * [x] 适配移动端
 * [x] 支持hook函数
-* [ ] 支持自定义样式 (2.0实现)
+* [x] 支持自定义样式 (2.0实现)
 * [ ] 支持jsx高级语法 (2.0实现)
 
 
@@ -132,7 +132,8 @@ this.$Message.loading(config)
 
 **功能演示** 
 
-![](https://makefriends.bs2dl.yy.com/bm1536222032449.gif)
+![xxx](
+https://o-id.ihago.net/boss/b596fcd2ce5e7bb51af674baeef9a348/GIF.gif)
 
 
 

@@ -8,10 +8,10 @@ import '@/css/reset.scss'
 /** 默认配置 */
 // Vue.use(VueMessage)
 
-/** 高级用法 */
+/** advance configuration */
 Vue.use(VueMessage, {
   duration: 1,
-  themes: 'blackGold', // classic classicBold
+  themes: 'classic', // classic classicBold
   styles: {
     top: 24, // 单位: px
     fontWeight: 'normal'

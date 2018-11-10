@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://cn.vuejs.org/v2/guide/"><img src="https://makefriends.bs2dl.yy.com/bm1539228392003.svg" alt="vue"></a>
-  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1539246165014.svg" alt="vue"></a>
+  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1541835935319.svg" alt="vue"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://makefriends.bs2dl.yy.com/bm1539228515177.svg" alt="vue"></a>
   <a href="https://github.com/yang657850144/vue-message"><img src="https://makefriends.bs2dl.yy.com/bm1539228726851.svg" alt="vue"></a>
 </p>
@@ -28,7 +28,7 @@
 * [x] Simple UI style
 * [x] Lightweight & Quickly
 * [x] Support mobile
-* [ ] Support custom CSS style(implement in 2.0)
+* [x] Support custom CSS style(implement in 2.0)
 * [ ] Support JSX render(implement in 2.0)
 
 
@@ -132,7 +132,8 @@ Currently supports four types：
 
 **Demo** 
 
-![](https://makefriends.bs2dl.yy.com/bm1536222032449.gif)
+![xxx](
+https://o-id.ihago.net/boss/b596fcd2ce5e7bb51af674baeef9a348/GIF.gif)
 
 
 
