@@ -1,6 +1,6 @@
 {
   "name": "vue-messages",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Mobile UI Component - Vue-messages",
   "main": "./src/index.js",
   "scripts": {

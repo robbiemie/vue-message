@@ -1,6 +1,6 @@
 # Mobile UI Component - Vue-messages
 <p align="center">
-    <a href="http://www.yangoogle.com/#/lib/messages">
+    <a href="http://www.yangoogle.com/#/work">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
     </a>
 </p>
@@ -16,7 +16,7 @@
 [中文](https://github.com/yang657850144/vue-message/blob/master/README-ZH.md) | [English](https://github.com/yang657850144/vue-message/blob/master/README.md)
 
 
-[Online preview](http://www.yangoogle.com/#/lib/messages)
+[Online preview](http://www.yangoogle.com/#/work)
 
 ## Introduction
 
@@ -51,22 +51,7 @@ import Vue from 'vue'
 import VueMessages from 'vue-messages'
 
 
-/** default configuration */
-// Vue.use(VueMessage)
-
-/** advance configuration */
-Vue.use(VueMessage, {
-  title: '13123', // title
-  content: '123456', // content
-  duration: 2, // duration time 
-  type: '',
-  before () {
-    console.log('custom before hook')
-  },
-  done () {
-    console.log('custom done hook')
-  }
-})
+Vue.use(VueMessages)
 ...
 ```
 
@@ -111,11 +96,10 @@ this.$Message.loading(config)
 | attr | desc | type | default |
 | --- | --- | --- | --- |
 | content | display content | string | - |
-| duration | duration time | number | 2(unit:s) |
+| duration | duration time | number | 2000(unit:ms) |
 | styles | custom style| Object | - |
 | Subsequent implementation |  |  | - |
 | Theme | (advance)theme | Object | - |
-| hook | Hook Function| Function | - |
 | render | (advance)render function(support JSX) | Function | - |
 
 
