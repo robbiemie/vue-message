@@ -19,4 +19,6 @@ shell.cp('-R', resolve('./README-ZH.md'), resolve('lib/README-ZH.md'))
 setTimeout(_ => {
   shell.cd('./lib/vue-message')
   shell.exec('npm run release && npm publish --access=public')
+  shell.cd('../../')
+  shell.exec('git commit -am \'UPDATE README.md\' && git push')
 }, 300)
