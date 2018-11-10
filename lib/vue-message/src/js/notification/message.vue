@@ -20,7 +20,9 @@ export default {
   props: [
     'item',
     'content',
-    'name'
+    'name',
+    'duration',
+    'styles'
   ],
   created () {
   },
@@ -33,20 +35,22 @@ export default {
     }
   },
   async mounted () {
+    console.log('styles', this.styles)
     this.$nextTick(() => {
       let w = document.body.clientWidth
       let cw = this.$refs.messageCell.clientWidth
+      this.$refs.messageCell.style.top = `${this.styles.top}px`
       this.$refs.messageCell.style.left = `${(w - cw) / 2}px`
     })
     this.show = true
-    await this.sleep(2000).then(res => {
+    await this.sleep(this.duration).then(res => {
       this.show = false
       this.$emit('remove', this.item.name)
     })
   },
   methods: {
     sleep (time) {
-      return new Promise(resolve => setTimeout(resolve, time))
+      return new Promise(resolve => setTimeout(resolve, time * 1000))
     }
   }
 }
@@ -56,7 +60,6 @@ export default {
 .message {
   position: absolute;
   top: 30px;
-  margin-top: 30px;
   padding: 16px;
   height: auto;
   display: flex;

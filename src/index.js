@@ -12,8 +12,10 @@ import '@/css/reset.scss'
 Vue.use(VueMessage, {
   title: '13123', // 提示标题
   content: '123456', // 提示内容
-  duration: 2,
-  type: '',
+  duration: 3,
+  styles: {
+    top: 44 // 单位: px
+  },
   before () {
     console.log('custom before hook')
   },
