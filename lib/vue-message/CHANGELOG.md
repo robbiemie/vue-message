@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.4"></a>
+## [2.0.4](https://github.com/yang657850144/vue-message/compare/v2.0.3...v2.0.4) (2018-11-10)
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/yang657850144/vue-message/compare/v2.0.2...v2.0.3) (2018-11-10)
 
