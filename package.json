@@ -1,5 +1,5 @@
 {
-  "name": "vue-messages-test",
+  "name": "vue-messages-utils",
   "version": "1.0.2",
   "description": "Vue-messages Component for test",
   "main": "dist/index.js",

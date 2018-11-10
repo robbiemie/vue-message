@@ -11,7 +11,8 @@ export default {
   data () {
     return {
       notices: [],
-      props: {}
+      props: {
+      }
     }
   },
   components: {
@@ -21,6 +22,7 @@ export default {
   },
   methods: {
     notice (props) {
+      this.props.done = props.done
       let _notice = Object.assign({
         key: props.key,
         styles: {
@@ -36,7 +38,9 @@ export default {
       this.notices = this.notices.filter(item => {
         if (item.key !== key) { return item }
       })
-      // console.log('remove', this.notices)
+      // done Hook
+      this.props.done()
+      // console.log('remove', this.props)
     },
     removeAll () {
       this.notices = []

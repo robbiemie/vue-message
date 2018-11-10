@@ -28,6 +28,7 @@
 * [x] 简洁的UI风格
 * [x] 轻量且高效
 * [x] 适配移动端
+* [x] 支持hook函数
 * [ ] 支持自定义样式 (2.0实现)
 * [ ] 支持jsx高级语法 (2.0实现)
 
@@ -51,7 +52,22 @@ import Vue from 'vue'
 import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessages)
+/** 默认配置 */
+// Vue.use(VueMessage)
+
+/** 高级用法 */
+Vue.use(VueMessage, {
+  title: '13123', // 提示标题
+  content: '123456', // 提示内容
+  duration: 2,
+  type: '',
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ...
 ```
 
@@ -95,10 +111,11 @@ this.$Message.loading(config)
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | content | 显示内容 | string | - |
-| duration | 弹窗停留时间 | number | 2000(单位:ms) |
+| duration | 弹窗停留时间 | number | 2(单位:s) |
 | styles | 自定义样式 | Object | - |
 | 后期添加 |  |  | - |
 | Theme | (高级)主题 | Object | - |
+| hook | 钩子函数 | Function | - |
 | render | (高级)渲染函数(支持jsx语法) | Function | - |
 
 

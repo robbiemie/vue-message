@@ -51,7 +51,22 @@ import Vue from 'vue'
 import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessages)
+/** default configuration */
+// Vue.use(VueMessage)
+
+/** advance configuration */
+Vue.use(VueMessage, {
+  title: '13123', // title
+  content: '123456', // content
+  duration: 2, // duration time 
+  type: '',
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ...
 ```
 
@@ -96,10 +111,11 @@ this.$Message.loading(config)
 | attr | desc | type | default |
 | --- | --- | --- | --- |
 | content | display content | string | - |
-| duration | duration time | number | 2000(unit:ms) |
+| duration | duration time | number | 2(unit:s) |
 | styles | custom style| Object | - |
 | Subsequent implementation |  |  | - |
 | Theme | (advance)theme | Object | - |
+| hook | Hook Function| Function | - |
 | render | (advance)render function(support JSX) | Function | - |
 
 
