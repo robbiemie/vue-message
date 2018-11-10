@@ -109,7 +109,7 @@ this.$Message.loading(config)
 this.$Message.info({
   content: 'This is a normal message.',
   duration: 1,
-  themes: 'classic', // classic classicBold
+  themes: 'classic', // classic blackGold
   styles: {
     fontSize: 14 // 单位: px
   },
