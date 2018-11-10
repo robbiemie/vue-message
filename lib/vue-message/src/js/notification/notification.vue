@@ -1,6 +1,6 @@
 <template>
   <div class="notification">
-    <Message v-for="item in notices" @remove="remove" :key="item.key" :styles="item.styles" :duration="item.duration" :name="item.key" :item="item" ></Message>
+    <Message v-for="item in notices" @remove="remove" :key="item.key" :itemInfo="item" ></Message>
   </div>
 </template>
 
@@ -25,8 +25,9 @@ export default {
       this.props.done = props.done
       let _notice = Object.assign({
         key: props.key,
-        styles: props.styles,
         type: props.type,
+        styles: props.styles,
+        themes: props.themes,
         content: props.content,
         duration: props.duration
       })

@@ -56,18 +56,20 @@ import VueMessages from 'vue-messages'
 Vue.use(VueMessage)
 
 /** 高级用法 */
-// Vue.use(VueMessage, {
-//   duration: 3,
-//   styles: {
-//     top: 44 // 单位: px
-//   },
-//   before () {
-//     console.log('custom before hook')
-//   },
-//   done () {
-//     console.log('custom done hook')
-//   }
-// })
+Vue.use(VueMessage, {
+  duration: 1, // 单位: s
+  themes: 'blackGold', // classic or classicBold
+  styles: {
+    top: 24, // 单位: px
+    fontWeight: 'normal'
+  },
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ```
 
 

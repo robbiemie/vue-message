@@ -10,11 +10,11 @@ import '@/css/reset.scss'
 
 /** 高级用法 */
 Vue.use(VueMessage, {
-  title: '13123', // 提示标题
-  content: '123456', // 提示内容
-  duration: 3,
+  duration: 1,
+  themes: 'blackGold', // classic classicBold
   styles: {
-    top: 44 // 单位: px
+    top: 24, // 单位: px
+    fontWeight: 'normal'
   },
   before () {
     console.log('custom before hook')

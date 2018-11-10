@@ -55,18 +55,20 @@ import VueMessages from 'vue-messages'
 Vue.use(VueMessage)
 
 /** advance configuration */
-// Vue.use(VueMessage, {
-//   duration: 3,
-//   styles: {
-//     top: 44 // unit: px
-//   },
-//   before () {
-//     console.log('custom before hook')
-//   },
-//   done () {
-//     console.log('custom done hook')
-//   }
-// })
+Vue.use(VueMessage, {
+  duration: 1, // unit: s
+  themes: 'blackGold', // classic or classicBold
+  styles: {
+    top: 24, // unit: px
+    fontWeight: 'normal' // normal or bold
+  },
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ```
 
 
@@ -111,7 +113,7 @@ this.$Message.loading(config)
 | --- | --- | --- | --- |
 | duration | duration time | number | 2(unit:s) |
 | styles | custom style| Object | {top:24}(unit:px) |
-| Theme | (advance)theme | Object | - |
+| Theme | (advance)theme | String | 'classic' Or 'classicBold' |
 | before | Hook Function| Function | - |
 | done | Hook Function| Function | - |
 | Subsequent implementation |  |  | - |

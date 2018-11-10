@@ -3,7 +3,7 @@
       <template id="message-cell-template">
         <div v-if="show" class="message" ref="messageCell">
           <div class="message__icon" :class="getClass"></div>
-          <div class="message__content">{{item.content}}</div>
+          <div class="message__content" ref="messageContent">{{itemInfo.content}}</div>
         </div>
       </template>
   </transition>
@@ -14,38 +14,51 @@ export default {
   name: 'message',
   data () {
     return {
-      show: false
+      show: false,
+      themeConfig: {
+        'classic': {
+          fontSize: 28,
+          color: 'rgb(78, 78, 78)',
+          backgroundColor: '#fff'
+        },
+        'blackGold': {
+          fontSize: 28,
+          color: 'rgb(255, 255, 255)',
+          backgroundColor: '#000'
+        }
+      }
     }
   },
   props: [
-    'item',
-    'content',
-    'name',
-    'duration',
-    'styles'
+    'itemInfo'
   ],
   created () {
   },
   computed: {
     getClass () {
       const clazz = {}
-      const clazzName = `message__icon--${this.item.type}`
+      const clazzName = `message__icon--${this.itemInfo.type}`
       clazz[clazzName] = true
       return clazz
     }
   },
   async mounted () {
-    console.log('styles', this.styles)
     this.$nextTick(() => {
+      console.log(this.itemInfo)
+      let theme = this.itemInfo.themes || 'classic'
       let w = document.body.clientWidth
       let cw = this.$refs.messageCell.clientWidth
-      this.$refs.messageCell.style.top = `${this.styles.top}px`
+      this.$refs.messageCell.style.top = `${this.itemInfo.styles.top}px`
       this.$refs.messageCell.style.left = `${(w - cw) / 2}px`
+      this.$refs.messageCell.style.fontWeight = this.itemInfo.styles.fontWeight
+      this.$refs.messageCell.style.color = this.themeConfig[theme].color
+      this.$refs.messageCell.style.fontSize = this.themeConfig[theme].fontSize
+      this.$refs.messageCell.style.backgroundColor = this.themeConfig[theme].backgroundColor
     })
     this.show = true
-    await this.sleep(this.duration).then(res => {
+    await this.sleep(this.itemInfo.duration).then(res => {
       this.show = false
-      this.$emit('remove', this.item.name)
+      this.$emit('remove', this.itemInfo.name)
     })
   },
   methods: {
@@ -66,6 +79,7 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  font-size: 28px;
   z-index: 99999;
   box-shadow: 0px 0px 15px #ccc;
   background: #fff;
@@ -73,6 +87,8 @@ export default {
     width: 40px;
     height: 40px;
     &--error {
+      width: 30px;
+      height: 30px;
       background: url(../../img/error.png) no-repeat;
       background-size: contain;
     }
@@ -91,9 +107,8 @@ export default {
   }
   &__content {
     margin-left: 10px;
+    line-height: 30px;
     padding: 10px;
-    font-size: 24px;
-    color: rgb(78, 78, 78);
   }
 }
 /* 可以设置不同的进入和离开动画 */

@@ -1,9 +1,9 @@
 <template>
 <div id="app">
-  <div class="test__btn" @click="info">信息</div>
-  <div class="test__btn" @click="error">错误</div>
-  <div class="test__btn" @click="warning">警告</div>
-  <div class="test__btn" @click="success">成功</div>
+  <div class="test__btn test__btn--info" @click="info">info</div>
+  <div class="test__btn test__btn--success" @click="success">success</div>
+  <div class="test__btn test__btn--warning" @click="warning">warning</div>
+  <div class="test__btn test__btn--error" @click="error">error</div>
 </div>
 </template>
 
@@ -21,16 +21,16 @@ export default {
   },
   methods: {
     info () {
-      this.$Message.info('这是一个有内涵的消息')
+      this.$Message.info('This is a normal message.')
     },
     error () {
-      this.$Message.error('对方不想理你，并向你throw一个error')
+      this.$Message.error('I\'m sorry，throw an error for you!')
     },
     warning () {
       this.$Message.warning('FBI Warning!')
     },
     success () {
-      this.$Message.success('加载成功')
+      this.$Message.success('loading success.ok~')
     }
   }
 }
@@ -41,15 +41,35 @@ html, body, #app {
   width: 100%;
   height: 100%;
 }
+#app {
+  margin-top: 200px;
+  overflow: hidden;
+}
 .test__btn {
   margin-top: 30px;
   width: 200px;
   height: 50px;
   line-height: 50px;
   font-size: 26px;
-  color: #ccc;
+  color: #fff;
   border-radius: 8px;
   text-align: center;
   background: #000;
+  &--info {
+  background: #2db7f5;
+
+  }
+  &--success {
+  background: #19be6b;
+
+  }
+  &--warning {
+  background: #ff9900;
+
+  }
+  &--error {
+  background: #ed4014;
+
+  }
 }
 </style>
