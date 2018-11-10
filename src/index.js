@@ -11,7 +11,7 @@ import '@/css/reset.scss'
 /** advance configuration */
 Vue.use(VueMessage, {
   duration: 1,
-  themes: 'classic', // classic classicBold
+  themes: 'classic', // classic blackGold
   styles: {
     top: 24, // 单位: px
     fontWeight: 'normal',

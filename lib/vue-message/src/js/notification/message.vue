@@ -42,7 +42,7 @@ export default {
   },
   async mounted () {
     this.$nextTick(() => {
-      console.log(this.itemInfo)
+      // console.log(this.itemInfo)
       let theme = this.itemInfo.themes || 'classic'
       let w = document.body.clientWidth
       let cw = this.$refs.messageCell.clientWidth
