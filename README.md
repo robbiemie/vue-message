@@ -52,22 +52,21 @@ import VueMessages from 'vue-messages'
 
 
 /** default configuration */
-// Vue.use(VueMessage)
+Vue.use(VueMessage)
 
 /** advance configuration */
-Vue.use(VueMessage, {
-  title: '13123', // title
-  content: '123456', // content
-  duration: 2, // duration time 
-  type: '',
-  before () {
-    console.log('custom before hook')
-  },
-  done () {
-    console.log('custom done hook')
-  }
-})
-...
+// Vue.use(VueMessage, {
+//   title: '13123', // title
+//   content: '123456', // content
+//   duration: 2, // duration time 
+//   type: '',
+//   before () {
+//     console.log('custom before hook')
+//   },
+//   done () {
+//     console.log('custom done hook')
+//   }
+// })
 ```
 
 
