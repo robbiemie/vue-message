@@ -84,8 +84,7 @@ $ window.$Message
 
 **调用方式**
 
-
-![](https://makefriends.bs2dl.yy.com/bm1536156703536.jpg)
+![](https://makefriends.bs2dl.yy.com/bm1541836106053.jpg)
 
 
 
