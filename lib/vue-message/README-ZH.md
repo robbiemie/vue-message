@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://cn.vuejs.org/v2/guide/"><img src="https://makefriends.bs2dl.yy.com/bm1539228392003.svg" alt="vue"></a>
-  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1539246165014.svg" alt="vue"></a>
+  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1541835935319.svg" alt="vue"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://makefriends.bs2dl.yy.com/bm1539228515177.svg" alt="vue"></a>
   <a href="https://github.com/yang657850144/vue-message"><img src="https://makefriends.bs2dl.yy.com/bm1539228726851.svg" alt="vue"></a>
 </p>
@@ -28,7 +28,8 @@
 * [x] 简洁的UI风格
 * [x] 轻量且高效
 * [x] 适配移动端
-* [ ] 支持自定义样式 (2.0实现)
+* [x] 支持hook函数
+* [x] 支持自定义样式 (2.0实现)
 * [ ] 支持jsx高级语法 (2.0实现)
 
 
@@ -51,8 +52,24 @@ import Vue from 'vue'
 import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessages)
-...
+/** 默认配置 */
+Vue.use(VueMessage)
+
+/** 高级用法 */
+Vue.use(VueMessage, {
+  duration: 1, // 单位: s
+  themes: 'blackGold', // classic or classicBold
+  styles: {
+    top: 24, // 单位: px
+    fontWeight: 'normal'
+  },
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ```
 
 
@@ -94,11 +111,12 @@ this.$Message.loading(config)
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| content | 显示内容 | string | - |
-| duration | 弹窗停留时间 | number | 2000(单位:ms) |
-| styles | 自定义样式 | Object | - |
-| 后期添加 |  |  | - |
+| duration | 弹窗停留时间 | number | 2(单位:s) |
+| styles | 自定义样式 | Object | {top:24}(单位:px) |
 | Theme | (高级)主题 | Object | - |
+| before | Hook 函数 | Function | 执行前调用 |
+| done | Hook 函数 | Function | 执行后调用 |
+| 后期添加 |  |  | - |
 | render | (高级)渲染函数(支持jsx语法) | Function | - |
 
 
@@ -114,7 +132,8 @@ this.$Message.loading(config)
 
 **功能演示** 
 
-![](https://makefriends.bs2dl.yy.com/bm1536222032449.gif)
+![xxx](
+https://o-id.ihago.net/boss/b596fcd2ce5e7bb51af674baeef9a348/GIF.gif)
 
 
 

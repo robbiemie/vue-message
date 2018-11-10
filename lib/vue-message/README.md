@@ -1,13 +1,13 @@
 # Mobile UI Component - Vue-messages
 <p align="center">
-    <a href="http://www.yangoogle.com/#/work">
+    <a href="http://www.yangoogle.com/#/lib/messages">
         <img width="200" src="https://file.iviewui.com/logo-new.svg"/>
     </a>
 </p>
 
 <p align="center">
   <a href="https://cn.vuejs.org/v2/guide/"><img src="https://makefriends.bs2dl.yy.com/bm1539228392003.svg" alt="vue"></a>
-  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1539246165014.svg" alt="vue"></a>
+  <a href="https://www.npmjs.com/package/vue-messages"><img src="https://makefriends.bs2dl.yy.com/bm1541835935319.svg" alt="vue"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://makefriends.bs2dl.yy.com/bm1539228515177.svg" alt="vue"></a>
   <a href="https://github.com/yang657850144/vue-message"><img src="https://makefriends.bs2dl.yy.com/bm1539228726851.svg" alt="vue"></a>
 </p>
@@ -16,7 +16,7 @@
 [中文](https://github.com/yang657850144/vue-message/blob/master/README-ZH.md) | [English](https://github.com/yang657850144/vue-message/blob/master/README.md)
 
 
-[Online preview](http://www.yangoogle.com/#/work)
+[Online preview](http://www.yangoogle.com/#/lib/messages)
 
 ## Introduction
 
@@ -28,7 +28,7 @@
 * [x] Simple UI style
 * [x] Lightweight & Quickly
 * [x] Support mobile
-* [ ] Support custom CSS style(implement in 2.0)
+* [x] Support custom CSS style(implement in 2.0)
 * [ ] Support JSX render(implement in 2.0)
 
 
@@ -51,8 +51,24 @@ import Vue from 'vue'
 import VueMessages from 'vue-messages'
 
 
-Vue.use(VueMessages)
-...
+/** default configuration */
+Vue.use(VueMessage)
+
+/** advance configuration */
+Vue.use(VueMessage, {
+  duration: 1, // unit: s
+  themes: 'blackGold', // classic or classicBold
+  styles: {
+    top: 24, // unit: px
+    fontWeight: 'normal' // normal or bold
+  },
+  before () {
+    console.log('custom before hook')
+  },
+  done () {
+    console.log('custom done hook')
+  }
+})
 ```
 
 
@@ -95,11 +111,12 @@ this.$Message.loading(config)
 
 | attr | desc | type | default |
 | --- | --- | --- | --- |
-| content | display content | string | - |
-| duration | duration time | number | 2000(unit:ms) |
-| styles | custom style| Object | - |
+| duration | duration time | number | 2(unit:s) |
+| styles | custom style| Object | {top:24}(unit:px) |
+| Theme | (advance)theme | String | 'classic' Or 'classicBold' |
+| before | Hook Function| Function | - |
+| done | Hook Function| Function | - |
 | Subsequent implementation |  |  | - |
-| Theme | (advance)theme | Object | - |
 | render | (advance)render function(support JSX) | Function | - |
 
 
@@ -115,7 +132,8 @@ Currently supports four types：
 
 **Demo** 
 
-![](https://makefriends.bs2dl.yy.com/bm1536222032449.gif)
+![xxx](
+https://o-id.ihago.net/boss/b596fcd2ce5e7bb51af674baeef9a348/GIF.gif)
 
 
 
