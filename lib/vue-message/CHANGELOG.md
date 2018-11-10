@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.2"></a>
+## 2.0.2 (2018-11-10)
+
+
+### Bug Fixes
+
+* 删除多余log ([9df92ed](https://github.com/yang657850144/vue-message/commit/9df92ed))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/yang657850144/vue-message/compare/v1.2.3...v2.0.1) (2018-11-10)
 
