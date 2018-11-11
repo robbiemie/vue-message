@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.5"></a>
+## [2.0.5](https://github.com/yang657850144/vue-message/compare/v2.0.1...v2.0.5) (2018-11-11)
+
+
+### Bug Fixes
+
+* format webpack config code ([09e7e07](https://github.com/yang657850144/vue-message/commit/09e7e07))
+* 删除多余log ([9df92ed](https://github.com/yang657850144/vue-message/commit/9df92ed))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/yang657850144/vue-message/compare/v2.0.3...v2.0.4) (2018-11-10)
 
