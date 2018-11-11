@@ -27,6 +27,10 @@ module.exports = merge(common, {
       poll: false
     }
   },
+  module: {
+    rules: [
+    ]
+  },
   plugins: [
     new FriendlyErrorsPlugin(),
     new webpack.NamedModulesPlugin(),

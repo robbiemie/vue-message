@@ -59,6 +59,13 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        options: {
+          'presets': [['babel-preset-env', {
+            'targets': {
+              'browsers': ['last 2 versions', 'safari >= 7']
+            }
+          }]]
+        },
         exclude: /node_modules/
       },
       {
