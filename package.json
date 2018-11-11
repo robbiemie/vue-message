@@ -65,7 +65,7 @@
     "url-loader": "^1.0.1",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.6",
-    "vue-messages": "^2.0.4",
+    "vue-messages": "^2.0.6",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
