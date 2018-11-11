@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.8"></a>
+## [2.0.8](https://github.com/yang657850144/vue-message/compare/v2.0.7...v2.0.8) (2018-11-11)
+
+
+### Bug Fixes
+
+* 修复编译后的dist文件 ([4b3b97d](https://github.com/yang657850144/vue-message/commit/4b3b97d))
+
+
+
 <a name="2.0.7"></a>
 ## [2.0.7](https://github.com/yang657850144/vue-message/compare/v2.0.6...v2.0.7) (2018-11-11)
 
