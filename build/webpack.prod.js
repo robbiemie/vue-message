@@ -1,24 +1,40 @@
 const merge = require('webpack-merge')
 const webpack = require('webpack')
+const path = require('path')
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const common = require('./webpack.common.js')
+const { resolve } = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin') // eslint-disable-line
 
 module.exports = merge(common, {
   mode: 'production',
+  entry: resolve(__dirname, '../lib/vue-message/src'),
   output: {
+    filename: 'bundle.js',
+    path: resolve(__dirname, '../dist'),
     libraryTarget: 'umd'
   },
+  resolve: {
+    extensions: ['.js', '.vue', '.scss']
+  },
+  externals: {
+    vue: 'Vue'
+  },
   plugins: [
-    // new MiniCssExtractPlugin({
-    //   filename: 'vue-message.css'
-    //   // chunkFilename: '[id].[chunkhash:4].css'
-    // }),
+    new CleanWebpackPlugin(['dist'], {
+      root: path.resolve(__dirname, '../')
+    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new webpack.HashedModuleIdsPlugin()
+    new webpack.HashedModuleIdsPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: resolve(__dirname, '../src/html/index.html')
+    })
   ],
   optimization: {
     minimizer: [

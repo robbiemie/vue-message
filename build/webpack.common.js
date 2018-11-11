@@ -4,7 +4,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin') // eslint-disable-line
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // eslint-disable-line
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin') // eslint-disable-line
-const CleanWebpackPlugin = require('clean-webpack-plugin') // eslint-disable-line
 const EslintFriendlyFormatter = require('eslint-friendly-formatter')
 
 const isDev = process.env.NODE_ENV !== 'production' // eslint-disable-line
@@ -81,9 +80,6 @@ module.exports = {
     extensions: ['*', '.js', '.vue', '.scss', '.css', '.json']
   },
   plugins: [
-    // new CleanWebpackPlugin(['dist'], {
-    //   root: path.join(__dirname, '../')
-    // }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
