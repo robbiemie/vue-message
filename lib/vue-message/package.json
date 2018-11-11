@@ -1,8 +1,8 @@
 {
   "name": "vue-messages",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Mobile UI Component - Vue-messages",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
