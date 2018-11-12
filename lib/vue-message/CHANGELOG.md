@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.11"></a>
+## [2.0.11](https://github.com/yang657850144/vue-message/compare/v2.0.10...v2.0.11) (2018-11-12)
+
+
+### Bug Fixes
+
+* 修改babelrc [@babel](https://github.com/babel)/plugin-transform-runtime ([f780213](https://github.com/yang657850144/vue-message/commit/f780213))
+
+
+
 <a name="2.0.10"></a>
 ## [2.0.10](https://github.com/yang657850144/vue-message/compare/v2.0.9...v2.0.10) (2018-11-12)
 
