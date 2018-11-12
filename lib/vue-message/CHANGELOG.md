@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.9"></a>
+## [2.0.9](https://github.com/yang657850144/vue-message/compare/v2.0.8...v2.0.9) (2018-11-12)
+
+
+### Bug Fixes
+
+* 将编译包的img分离 ([f24b7ac](https://github.com/yang657850144/vue-message/commit/f24b7ac))
+* 紧急修复编译bug ([cd80514](https://github.com/yang657850144/vue-message/commit/cd80514))
+
+
+
 <a name="2.0.8"></a>
 ## [2.0.8](https://github.com/yang657850144/vue-message/compare/v2.0.7...v2.0.8) (2018-11-11)
 
