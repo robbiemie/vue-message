@@ -29,6 +29,19 @@ module.exports = merge(common, {
   },
   module: {
     rules: [
+      {
+        test: /\.(png|svga?|jpg|gif|mp3|mp4|wma|ttf|TTF|woff|eot|EOT|otf|OTF|WOFF)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1000,
+              fallback: 'file-loader',
+              name: '[name].[ext]?[hash]'
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
