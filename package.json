@@ -65,7 +65,7 @@
     "url-loader": "^1.0.1",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.6",
-    "vue-messages": "^2.0.8",
+    "vue-messages": "^2.0.10",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
@@ -73,6 +73,7 @@
     "webpack-merge": "^4.1.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-regenerator": "^7.0.0",
     "babel-esm-plugin": "^0.2.6",
     "standard-version": "^4.4.0"
   }

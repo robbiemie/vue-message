@@ -6,6 +6,7 @@
   "env": {
     "production": {
       "plugins": [
+        "transform-runtime",
         "transform-decorators-legacy",
         "syntax-dynamic-import",
         "transform-class-properties"
