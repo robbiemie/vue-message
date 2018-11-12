@@ -84,14 +84,14 @@ export default {
   &__icon {
     width: 40px;
     height: 40px;
+    &--info {
+      background: url(../../img/info.png) no-repeat;
+      background-size: contain;
+    }
     &--error {
       width: 30px;
       height: 30px;
       background: url(../../img/error.png) no-repeat;
-      background-size: contain;
-    }
-    &--info {
-      background: url(../../img/info.png) no-repeat;
       background-size: contain;
     }
     &--warning {

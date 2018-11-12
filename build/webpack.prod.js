@@ -15,6 +15,7 @@ module.exports = merge(common, {
   output: {
     filename: 'index.js',
     path: resolve(__dirname, '../lib/vue-message/dist'),
+    publicPath: '../lib/vue-message/dist/',
     library: 'VueMessage',
     libraryTarget: 'umd'
   },

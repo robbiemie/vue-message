@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import VueMessage from 'vue-messages'
+// import VueMessage from 'vue-messages'
 // import VueMessage from '../node_modules/vue-messages/dist/index.js'
-// import VueMessage from '~/lib/vue-message' // eslint-disable-line
+// import VueMessage from '../dist/index'
+import VueMessage from '~/lib/vue-message/dist/index'
 import app from '@/module/app'
 
 import '@/css/normalize.scss'

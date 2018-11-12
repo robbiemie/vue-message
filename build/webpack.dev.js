@@ -17,7 +17,7 @@ module.exports = merge(common, {
   },
   entry: path.join(__dirname, '../src'),
   devServer: {
-    contentBase: path.join(__dirname, '../dist'),
+    // contentBase: path.join(__dirname, '../dist'),
     hot: true,
     open: true,
     quiet: true, // necessary for FriendlyErrorsPlugin
