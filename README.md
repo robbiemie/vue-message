@@ -83,8 +83,9 @@ $ window.$Message
 ```
 
 
-**use in Vue**
+**Usage**
 
+> For Vue
 
 ![](https://makefriends.bs2dl.yy.com/bm1541836106053.jpg)
 
@@ -125,7 +126,7 @@ this.$Message.info({
 ```
 
 
-**config OPTIONS**
+**OPTIONS**
 
 
 | attr | desc | type | default |
