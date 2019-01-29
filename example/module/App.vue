@@ -12,16 +12,20 @@ export default {
   name: 'id',
   methods: {
     doInfo () {
-      console.log('info')
+      // console.log('info')
+      this.$Message.info('info message')
     },
     doSuccess () {
-      console.log('success')
+      // console.log('success')
+      this.$Message.success('success message')
     },
     doWarning () {
-      console.log('warning')
+      // console.log('warning')
+      this.$Message.warning('warning message')
     },
     doError () {
-      console.log('error')
+      // console.log('error')
+      this.$Message.error('error message')
     }
   }
 }
