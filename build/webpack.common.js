@@ -13,9 +13,9 @@ console.log(`当前node环境为：${process.env.NODE_ENV}`)
 // const dist = process.env.baseWidth || ''
 
 module.exports = {
-  entry: path.join(__dirname, '../lib/vue-message'),
+  entry: path.join(__dirname, '../src/index.js'),
   output: {
-    path: path.resolve(__dirname, '../lib/vue-message/dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'index.js'
   },
   module: {

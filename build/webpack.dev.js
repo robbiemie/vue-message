@@ -11,11 +11,11 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src'),
-      '~': path.resolve(__dirname, '../../vue-message')
+      // '@': path.resolve(__dirname, '../example'),
+      // '~': path.resolve(__dirname, '../src')
     }
   },
-  entry: path.join(__dirname, '../src'),
+  entry: path.join(__dirname, '../example'),
   devServer: {
     // contentBase: path.join(__dirname, '../dist'),
     hot: true,
@@ -50,7 +50,7 @@ module.exports = merge(common, {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(__dirname, '../src/html/index.html')
+      template: path.join(__dirname, '../example/html/index.html')
     })
   ]
 })

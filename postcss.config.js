@@ -1,11 +1,11 @@
-let baseWidth = process.env.baseWidth || 750
+// let baseWidth = process.env.baseWidth || 750
 
-baseWidth = Number(baseWidth) / 10
+// baseWidth = Number(baseWidth) / 10
 
 module.exports = {
   plugins: {
     'postcss-pxtorem': {
-      rootValue: baseWidth,
+      rootValue: 75,
       propWhiteList: [],
       minPixelValue: 2
     }
