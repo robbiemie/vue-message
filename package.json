@@ -1,6 +1,6 @@
 {
   "name": "vue-messages",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "Vue-messages Component for test",
   "main": "dist/index.js",
   "module": "src/index.js",
