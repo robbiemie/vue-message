@@ -16,7 +16,7 @@ const shell = require('shelljs')
 // shell.cp('-R', resolve('./README.md'), resolve('lib/README.md'))
 // shell.cp('-R', resolve('./README-ZH.md'), resolve('lib/README-ZH.md'))
 
-shell.exec('npm run release && npm publish --access=public')
+shell.exec('npm publish --access=public')
 shell.exec('git commit -am \'UPDATE README.md\' && git push')
 // setTimeout(_ => {
 //   // shell.cd('./lib/vue-message')
