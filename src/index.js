@@ -15,11 +15,11 @@ const init = (options = {}) => {
     duration: 2, // 单位:s
     before () {
       // default before hook
-      console.log('before hook')
+      // console.log('before hook')
     },
     done () {
       // default done hook
-      console.log('done hook')
+      // console.log('done hook')
     }
   }
   Object.keys(_options).forEach(key => {
@@ -72,7 +72,7 @@ const generations = options => {
         })
       }
       opt.before()
-      console.log('options', opt)
+      // console.log('options', opt)
       notice(opt)
     }
   }

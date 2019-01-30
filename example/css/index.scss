@@ -5,12 +5,10 @@ html, body, #app {
   margin: 0;
   padding: 0;
   font-size: 24px;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 }
 #app {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -130,7 +130,7 @@ this.$Message.info({
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | duration | 弹窗停留时间 | number | 2(单位:s) |
-| styles | 自定义样式 | Object | {top:24}(单位:px) |
+| styles | 自定义样式 | Object | {fontSize:'16px',top:'20px'} |
 | Theme | (高级)主题 | Object | - |
 | before | Hook 函数 | Function | 执行前调用 |
 | done | Hook 函数 | Function | 执行后调用 |

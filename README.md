@@ -56,6 +56,7 @@ Vue.use(VueMessage)
 
 /** advance configuration */
 Vue.use(VueMessage, {
+  content:'',
   duration: 1, // unit: s
   themes: 'blackGold', // classic or classicBold
   styles: {
@@ -132,7 +133,7 @@ this.$Message.info({
 | attr | desc | type | default |
 | --- | --- | --- | --- |
 | duration | duration time | number | 2(unit:s) |
-| styles | custom style| Object | {top:24}(unit:px) |
+| styles | custom style| Object | {fontSize:'16px',top:'20px'} |
 | Theme | (advance)theme | String | 'classic' Or 'classicBold' |
 | before | Hook Function| Function | - |
 | done | Hook Function| Function | - |

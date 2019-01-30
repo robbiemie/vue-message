@@ -37,7 +37,7 @@ export default {
       let style = Object.keys(this.itemInfo.styles).map(key => {
         return `${key}:${this.itemInfo.styles[key]};`
       })
-      console.log('join', style.join(''))
+      // console.log('join', style.join(''))
       return style.join('')
     },
     getClass () {
@@ -49,7 +49,7 @@ export default {
   },
   async mounted () {
     this.$nextTick(_ => {
-      console.log(this.itemInfo)
+      // console.log(this.itemInfo)
       let theme = this.itemInfo.themes || 'classic'
       this.$refs.messageCell.style.color = this.themeConfig[theme].color
       this.$refs.messageCell.style.backgroundColor = this.themeConfig[theme].backgroundColor

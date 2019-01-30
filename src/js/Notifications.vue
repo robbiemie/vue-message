@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     notice (props) {
-      console.log('props', this.notices)
+      // console.log('props', this.notices)
       this.notices.push(props)
     },
     remove (key) {
