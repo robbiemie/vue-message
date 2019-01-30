@@ -11,11 +11,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin') // eslint-disable-lin
 
 module.exports = merge(common, {
   mode: 'production',
-  entry: resolve(__dirname, '../lib/vue-message/src'),
+  entry: resolve(__dirname, '../src'),
   output: {
     filename: 'index.js',
-    path: resolve(__dirname, '../lib/vue-message/dist'),
-    publicPath: '../lib/vue-message/dist/',
+    path: resolve(__dirname, '../dist'),
+    publicPath: '../dist/',
     library: 'VueMessage',
     libraryTarget: 'umd'
   },
@@ -30,7 +30,7 @@ module.exports = merge(common, {
           {
             loader: 'url-loader',
             options: {
-              limit: 1000,
+              limit: 2000,
               name: 'img/[name]-[hash:4].[ext]'
             }
           }
@@ -43,16 +43,12 @@ module.exports = merge(common, {
   },
   plugins: [
     new CleanWebpackPlugin(['dist'], {
-      root: path.resolve(__dirname, '../lib/vue-message/')
+      root: path.resolve(__dirname, '../')
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
     new webpack.HashedModuleIdsPlugin()
-    // new HtmlWebpackPlugin({
-    //   filename: 'index.html',
-    //   template: resolve(__dirname, '../src/html/index.html')
-    // })
   ],
   optimization: {
     minimizer: [

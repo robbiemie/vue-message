@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './module/App.vue'
-import VueMessages from './../src/index'
+import VueMessages from './../dist/index'
 
 Vue.use(VueMessages, { content: '', duration: 2 })
 
