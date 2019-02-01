@@ -20,7 +20,7 @@
 
 ## Introduction
 
-> Lightweight Mobile UI Component build on Vue2.0 and like [iview](https://www.iviewui.com/) style.
+> Lightweight Mobile UI Component build on Vue2.0.
 
 ## Features
 
