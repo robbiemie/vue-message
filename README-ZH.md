@@ -49,7 +49,7 @@ import Vue from 'vue'
 // 导入其他模块
 ...
 // 注意引入顺序，必须放在vue后面
-import VueMessages from 'vue-messages'
+import VueMessage from 'vue-messages'
 
 
 /** 默认配置 */
