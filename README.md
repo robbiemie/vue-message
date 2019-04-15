@@ -48,7 +48,7 @@ import Vue from 'vue'
 // import other modules
 ...
 // note the import order 
-import VueMessages from 'vue-messages'
+import VueMessage from 'vue-messages'
 
 
 /** default configuration */
